@@ -16,7 +16,8 @@ let global = {
     isPlaying: false
 };
 
-$progressTitleText.toggle();
+$( document ).ready(function() {
+    $progressTitleText.toggle();
 
 $startBtn.click(()=>{;
         banjo.play();
@@ -330,4 +331,7 @@ const gameWon = function () {
         $gameWonTitle.fadeOut();
     },3000);
 }
+
+
+});
 
