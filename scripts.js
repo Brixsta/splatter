@@ -275,8 +275,8 @@ const nextStage = function (stage) {
 }
 
 const hideClock = function () {
-    $progressTitleText.hide();
-    $hourGlass.hide();
+    $('.progressTitleText').hide();
+    $('.hourGlass').hide();
     $('.scoreBoard').attr('placeholder','0');
 }
 
