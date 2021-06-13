@@ -1,0 +1,168 @@
+* {
+    margin:0px;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    background-image:url('./images/bg.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.container {
+    height:100%;
+    width: 40em;
+    display:flex;
+    flex-wrap:wrap;
+    box-shadow:0px 10px 10px rgba(0,0,0,.5);
+    margin-top:2em;
+
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=116484) 2 2, pointer;
+
+}
+
+.topBar {
+    height:5em;
+    width:100%;
+    background-color:rgb(0, 111, 57);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    position:relative;
+}
+
+.topBar h1 {
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-size:3em;
+    letter-spacing: .15em;
+}
+
+.buttonBar {
+    height:7vh;
+    width:100%;
+    background-color:rgb(10, 196, 0);
+    display:flex;
+    align-items:center;
+}
+
+.canvas {
+    height:30em;
+    width:100%;
+    background-color:white;
+    position:relative;
+}
+
+.creature {
+    position:absolute;
+    z-index:1;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.startBtn {
+    cursor:pointer;
+    font-family: 'Montserrat', sans-serif;
+    border:0;
+    padding: 10px 20px;
+    margin:0px 2em;
+    border-radius:16px;
+    font-weight:bold; 
+    background-color:white; 
+    color:black; 
+}
+
+.startBtn:hover {
+    background-color:black;
+    color:white;
+}
+
+.startBtn:active {
+    transform:scale(.95);
+}
+
+.startBtn:disabled {
+    background-color:white;
+    opacity: 100;
+    color:black;
+}
+
+.buttonBar input[type=text]::placeholder {
+    color: black;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    margin-right:.09em;
+  }
+
+  .buttonBar label {
+    font-size: 1.5em;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .buttonBar input[type=text] {
+      background-color:white;
+      font-size: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+      width:1.5em;
+      border:0;
+      margin:0px .5em;
+  }
+
+  .bloodSplatter {
+      background-size:cover;
+      position:absolute;
+      z-index:1;
+  }
+
+  .bottomBar {
+      height:5em;
+      width:100%;
+      background-color:rgb(0, 111, 57);
+  }
+
+  .progressTitle {
+      height:3em;
+      width:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+  }
+
+  .progressTitle h1 {
+      font-size:1.3em;
+  }
+
+  .progressBar {
+      height:2em;
+      width:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+  }
+
+  .hourGlass {
+      height:.4em;
+      width:8   0%;
+      background-color:white;
+      margin-bottom:1em;
+      border-radius:16px;
+      transition: all .5s ease-in-out;
+  }
+
+  .stageIntro, .introTitle, .gameOverTitle,
+  .gameWonTitle {
+      color:rgb(0, 111, 57);
+      font-size:5em;
+      font-family: 'Montserrat', sans-serif;
+      text-align:center;
+      margin-top:10%;
+      user-select:none;
+  }
